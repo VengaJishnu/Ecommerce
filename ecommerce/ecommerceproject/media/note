@@ -1,0 +1,13 @@
+        NAVBAR.HTML
+
+<nav>
+  <ul>
+    <li><a href="{% url 'ecommerce:allproducts' %}">All products </a></li>
+      {% for cat in links %}
+     <li><a href="{{cat.get_url}}"></a> </li>
+      {% endfor %}
+    <li>Your cart()</li>
+  </ul>
+</nav>
+
+nav bar actual code
